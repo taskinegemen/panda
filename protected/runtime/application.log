@@ -1,0 +1,1324 @@
+2014/02/06 15:22:23 [error] [php] include(https.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php(196): import()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(89): createComponent()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(291): create()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): SiteController->run()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/login
+in /var/www/panda/index.php (13)
+2014/02/06 15:24:29 [error] [php] include(Https.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php(196): import()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(89): createComponent()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(291): create()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): SiteController->run()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/login
+in /var/www/panda/index.php (13)
+2014/02/06 16:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "log/in".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('log/in')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/log/in
+---
+2014/02/06 16:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/02/06 16:04:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "log/in".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('log/in')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/log/in
+---
+2014/02/06 16:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/02/06 16:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "list/magazines".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('list/magazines')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/list/magazines
+---
+2014/02/06 22:47:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://panda.lindneo.com/
+---
+2014/02/06 22:48:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=https://panda.lindneo.com/site/login
+---
+2014/02/11 07:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/02/11 08:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/02/11 08:08:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/panda/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gii/model/index
+HTTP_REFERER=http://panda.lindneo.com/gii/controller/index
+---
+2014/02/11 08:09:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/panda/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gii/model/index
+HTTP_REFERER=http://panda.lindneo.com/gii/controller/index
+---
+2014/02/11 08:09:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/panda/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gii/model/index
+---
+2014/02/11 08:33:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/book/1234
+---
+2014/02/11 08:36:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/book/1234
+---
+2014/02/11 08:36:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/book/1234
+---
+2014/02/11 08:36:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/book/1234
+---
+2014/02/11 08:36:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/book/1234
+---
+2014/02/11 08:36:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/book/1234
+---
+2014/02/11 08:36:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/book/1234
+---
+2014/02/11 08:37:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/book/
+---
+2014/02/11 08:37:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/6/
+---
+2014/02/11 08:37:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction
+---
+2014/02/11 08:37:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction
+---
+2014/02/11 08:43:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/5/book/8
+---
+2014/02/11 08:43:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/5/book/8
+---
+2014/02/11 08:43:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/5/book/8
+---
+2014/02/11 08:43:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/5/book/8
+---
+2014/02/11 08:43:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/5/book/8
+---
+2014/02/11 09:12:35 [error] [php] include(Transction.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(36): spl_autoload_call()
+#1 unknown(0): ApiController->actionTransaction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction/5/book/8
+in /var/www/panda/protected/controllers/ApiController.php (36)
+in /var/www/panda/index.php (13)
+2014/02/11 09:12:53 [error] [php] include(Transaction.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(36): spl_autoload_call()
+#1 unknown(0): ApiController->actionTransaction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction/5/book/8
+in /var/www/panda/protected/controllers/ApiController.php (36)
+in /var/www/panda/index.php (13)
+2014/02/11 09:18:00 [error] [php] json_decode() expects parameter 1 to be string, array given (/var/www/panda/protected/controllers/ApiController.php:54)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction/5/book/8
+in /var/www/panda/protected/controllers/ApiController.php (54)
+in /var/www/panda/index.php (13)
+2014/02/11 09:18:15 [error] [exception.CException] exception 'CException' with message 'Property "ApiController.errors" is not defined.' in /var/www/panda/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(8): CComponent->__get('errors')
+#1 /var/www/panda/protected/controllers/ApiController.php(54): ApiController->response('{"user_id":"5",...')
+#2 [internal function]: ApiController->actionTransaction('5', 'book', '8')
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ApiController), Array)
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ApiController), Object(ReflectionMethod), Array)
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#10 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/panda/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api/transaction/5/book/8
+---
+2014/02/11 09:19:09 [error] [exception.CException] exception 'CException' with message 'Property "ApiController.errors" is not defined.' in /var/www/panda/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(8): CComponent->__get('errors')
+#1 /var/www/panda/protected/controllers/ApiController.php(54): ApiController->response('{"user_id":"5",...')
+#2 [internal function]: ApiController->actionTransaction('5', 'book', '8')
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ApiController), Array)
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ApiController), Object(ReflectionMethod), Array)
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#10 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/panda/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api/transaction/5/book/8
+---
+2014/02/11 10:45:01 [error] [php] openssl_encrypt(): Using an empty Initialization Vector (iv) is potentially insecure and not recommended (/var/www/panda/protected/controllers/ApiController.php:62)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction/1/book/8
+in /var/www/panda/protected/controllers/ApiController.php (62)
+in /var/www/panda/index.php (13)
+2014/02/11 10:47:07 [error] [php] openssl_encrypt(): IV passed is only 9 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 (/var/www/panda/protected/controllers/ApiController.php:62)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction/1/book/8
+in /var/www/panda/protected/controllers/ApiController.php (62)
+in /var/www/panda/index.php (13)
+2014/02/11 10:47:28 [error] [php] openssl_encrypt(): IV passed is 23 bytes long which is longer than the 16 expected by selected cipher, truncating (/var/www/panda/protected/controllers/ApiController.php:62)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction/1/book/8
+in /var/www/panda/protected/controllers/ApiController.php (62)
+in /var/www/panda/index.php (13)
+2014/02/11 10:47:49 [error] [php] openssl_encrypt(): IV passed is only 15 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 (/var/www/panda/protected/controllers/ApiController.php:62)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction/1/book/8
+in /var/www/panda/protected/controllers/ApiController.php (62)
+in /var/www/panda/index.php (13)
+2014/02/11 12:50:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction...')
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/api/transaction/3/book/LgfYSNGI9KmMEhQfHXZVQS6q66B82yxPVExbgmbqAjZw
+---
+2014/02/12 13:36:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/02/13 10:08:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/02/13 10:15:59 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "addTransaction".' in /var/www/panda/yii-1.1.14.f0fee9/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(111): CComponent->__call('addTransaction', Array)
+#1 /var/www/panda/protected/controllers/ApiController.php(111): ApiController->addTransaction('1', 'book', '5567633')
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/panda/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/api/transaction
+---
+2014/02/13 10:18:05 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "bankProcess".' in /var/www/panda/yii-1.1.14.f0fee9/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(114): CComponent->__call('bankProcess', Array)
+#1 /var/www/panda/protected/controllers/ApiController.php(114): ApiController->bankProcess()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/panda/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/api/transaction
+---
+2014/02/13 10:19:49 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "bankProcess".' in /var/www/panda/yii-1.1.14.f0fee9/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(115): CComponent->__call('bankProcess', Array)
+#1 /var/www/panda/protected/controllers/ApiController.php(115): ApiController->bankProcess()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/panda/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/api/transaction
+---
+2014/02/13 10:20:00 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "bankProcess".' in /var/www/panda/yii-1.1.14.f0fee9/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(115): CComponent->__call('bankProcess', Array)
+#1 /var/www/panda/protected/controllers/ApiController.php(115): ApiController->bankProcess()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/panda/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/api/transaction
+---
+2014/02/13 10:21:12 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "bankProcess".' in /var/www/panda/yii-1.1.14.f0fee9/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(119): CComponent->__call('bankProcess', Array)
+#1 /var/www/panda/protected/controllers/ApiController.php(119): ApiController->bankProcess()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('transaction')
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/transaction')
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/panda/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/api/transaction
+---
+2014/02/13 10:21:29 [error] [php] Undefined variable: transction (/var/www/panda/protected/controllers/ApiController.php:91)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (91)
+in /var/www/panda/protected/controllers/ApiController.php (112)
+in /var/www/panda/index.php (13)
+2014/02/13 10:21:47 [error] [php] Undefined variable: transction (/var/www/panda/protected/controllers/ApiController.php:91)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (91)
+in /var/www/panda/protected/controllers/ApiController.php (112)
+in /var/www/panda/index.php (13)
+2014/02/13 10:22:12 [error] [php] Undefined variable: transction (/var/www/panda/protected/controllers/ApiController.php:91)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (91)
+in /var/www/panda/protected/controllers/ApiController.php (112)
+in /var/www/panda/index.php (13)
+2014/02/13 10:23:49 [error] [php] Undefined variable: transction (/var/www/panda/protected/controllers/ApiController.php:91)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (91)
+in /var/www/panda/protected/controllers/ApiController.php (112)
+in /var/www/panda/index.php (13)
+2014/02/13 10:24:27 [error] [php] Undefined variable: transction (/var/www/panda/protected/controllers/ApiController.php:91)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (91)
+in /var/www/panda/protected/controllers/ApiController.php (112)
+in /var/www/panda/index.php (13)
+2014/02/13 10:33:43 [error] [php] Trying to get property of non-object (/var/www/panda/protected/controllers/ApiController.php:126)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (126)
+in /var/www/panda/index.php (13)
+2014/02/13 10:38:01 [error] [php] Trying to get property of non-object (/var/www/panda/protected/controllers/ApiController.php:126)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (126)
+in /var/www/panda/index.php (13)
+2014/02/13 10:39:54 [error] [php] Trying to get property of non-object (/var/www/panda/protected/controllers/ApiController.php:126)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (126)
+in /var/www/panda/index.php (13)
+2014/02/13 12:11:13 [error] [php] Trying to get property of non-object (/var/www/panda/protected/controllers/ApiController.php:127)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (127)
+in /var/www/panda/index.php (13)
+2014/02/13 12:12:00 [error] [php] Trying to get property of non-object (/var/www/panda/protected/controllers/ApiController.php:127)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (127)
+in /var/www/panda/index.php (13)
+2014/02/13 12:12:20 [error] [php] Trying to get property of non-object (/var/www/panda/protected/controllers/ApiController.php:127)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (127)
+in /var/www/panda/index.php (13)
+2014/02/13 12:13:00 [error] [php] Undefined index: transction (/var/www/panda/protected/controllers/ApiController.php:127)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (127)
+in /var/www/panda/index.php (13)
+2014/02/18 09:02:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ekaratas".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('ekaratas')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/
+---
+2014/02/18 09:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ekaratas".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('ekaratas')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ekaratas/
+---
+2014/02/18 09:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/02/18 09:02:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "document".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('document')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/document
+---
+2014/02/18 09:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "documentation".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('documentation')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/documentation
+---
+2014/02/18 09:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "document".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('document')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('document')
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/document')
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/panda/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/document
+---
+2014/02/18 09:03:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('api')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/api/docume...')
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/panda/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/api/document
+---
+2014/02/18 09:03:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('api')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('api')
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/api/docume...')
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/panda/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/api/documentation
+---
+2014/02/18 09:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "documentation".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('documentation')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('documentation')
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/documentat...')
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/panda/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/documentation
+---
+2014/02/18 10:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/02/26 16:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/03 14:20:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/03 14:22:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kerberizedservice/authenticate".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('kerberizedservi...')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kerberizedservice/authenticate
+HTTP_REFERER=http://kerbela.lindneo.com/HttpService/
+---
+2014/03/03 14:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kerberizedservice/authenticate".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('kerberizedservi...')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kerberizedservice/authenticate
+HTTP_REFERER=http://kerbela.lindneo.com/HttpService/
+---
+2014/03/03 14:26:01 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedService/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (177)
+in /var/www/panda/protected/components/KerberizedServer.php (70)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+2014/03/03 14:28:05 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (177)
+in /var/www/panda/protected/components/KerberizedServer.php (70)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+2014/03/03 14:28:25 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (177)
+in /var/www/panda/protected/components/KerberizedServer.php (70)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+2014/03/03 14:31:43 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (177)
+in /var/www/panda/protected/components/KerberizedServer.php (70)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+2014/03/03 14:34:27 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (177)
+in /var/www/panda/protected/components/KerberizedServer.php (70)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+2014/03/03 14:42:27 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (177)
+in /var/www/panda/protected/components/KerberizedServer.php (70)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+2014/03/18 07:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/18 09:43:17 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (177)
+in /var/www/panda/protected/components/KerberizedServer.php (70)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+2014/03/18 09:50:30 [error] [php] include(Httpservice.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/components/KerberizedServer.php(177): spl_autoload_call()
+#1 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#2 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (177)
+in /var/www/panda/protected/components/KerberizedServer.php (70)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+2014/03/18 09:52:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'db_panda'@'lindneo.com' (using password: YES)' in /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/db/ar/CActiveRecord.php(1455): CActiveRecord->getCommandBuilder()
+#7 /var/www/panda/protected/components/KerberizedServer.php(177): CActiveRecord->find('http_service_na...', Array)
+#8 /var/www/panda/protected/components/KerberizedServer.php(70): KerberizedServer->getHTTPServiceSecretKey()
+#9 /var/www/panda/protected/controllers/KerberizedServiceController.php(16): KerberizedServer->authenticate()
+#10 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): KerberizedServiceController->actionAuthenticate()
+#11 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('authenticate')
+#15 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('KerberizedServi...')
+#16 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/panda/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/kerberizedservice/authenticate
+HTTP_REFERER=http://reader.lindneo.com/egemen/site/login
+---
+2014/03/18 09:56:26 [error] [php] Use of undefined constant KERBERIZED_SERVER_NAME - assumed 'KERBERIZED_SERVER_NAME' (/var/www/panda/protected/components/KerberizedServer.php:96)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (96)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+in /var/www/panda/index.php (13)
+2014/03/18 09:57:50 [error] [php] Undefined property: KerberizedServer::$KERBERIZED_SERVER_NAME (/var/www/panda/protected/components/KerberizedServer.php:96)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): KerberizedServiceController->runAction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): KerberizedServiceController->runActionWithFilters()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): KerberizedServiceController->run()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/kerberizedservice/authenticate
+in /var/www/panda/protected/components/KerberizedServer.php (96)
+in /var/www/panda/protected/controllers/KerberizedServiceController.php (16)
+in /var/www/panda/index.php (13)
+2014/03/19 06:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/19 12:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/19 12:44:29 [error] [php] Undefined offset: 1 (/var/www/panda/protected/components/KerberizedServer.php:191)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(141): ApiController->authenticate()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (191)
+in /var/www/panda/protected/components/KerberizedServer.php (16)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+2014/03/19 13:02:21 [error] [php] Undefined offset: 1 (/var/www/panda/protected/components/KerberizedServer.php:191)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(141): ApiController->authenticate()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (191)
+in /var/www/panda/protected/components/KerberizedServer.php (16)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+2014/03/19 13:02:58 [error] [php] Undefined offset: 1 (/var/www/panda/protected/components/KerberizedServer.php:191)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(141): ApiController->authenticate()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (191)
+in /var/www/panda/protected/components/KerberizedServer.php (16)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+2014/03/19 13:04:57 [error] [php] Undefined index: HTTP_service_session_key (/var/www/panda/protected/components/KerberizedServer.php:17)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (17)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+in /var/www/panda/protected/controllers/ApiController.php (141)
+2014/03/19 13:05:05 [error] [php] Undefined variable: auth (/var/www/panda/protected/controllers/ApiController.php:142)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (142)
+in /var/www/panda/index.php (13)
+2014/03/19 13:05:48 [error] [php] Undefined index: HTTP_service_session_key (/var/www/panda/protected/components/KerberizedServer.php:17)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (17)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+in /var/www/panda/protected/controllers/ApiController.php (141)
+2014/03/19 13:06:11 [error] [php] Undefined index: HTTP_service_session_key (/var/www/panda/protected/components/KerberizedServer.php:17)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (17)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+in /var/www/panda/protected/controllers/ApiController.php (141)
+2014/03/19 13:09:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/19 13:27:24 [error] [php] Undefined offset: 1 (/var/www/panda/protected/components/KerberizedServer.php:191)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(141): ApiController->authenticate()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (191)
+in /var/www/panda/protected/components/KerberizedServer.php (16)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+2014/03/19 13:28:42 [error] [php] Undefined offset: 1 (/var/www/panda/protected/components/KerberizedServer.php:191)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(141): ApiController->authenticate()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (191)
+in /var/www/panda/protected/components/KerberizedServer.php (16)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+2014/03/19 13:32:15 [error] [php] Undefined index: HTTP_service_session_key (/var/www/panda/protected/components/KerberizedServer.php:17)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (17)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+in /var/www/panda/protected/controllers/ApiController.php (141)
+2014/03/19 13:34:10 [error] [php] Undefined index: HTTP_service_session_key (/var/www/panda/protected/components/KerberizedServer.php:17)
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/components/KerberizedServer.php (17)
+in /var/www/panda/protected/controllers/ApiController.php (51)
+in /var/www/panda/protected/controllers/ApiController.php (141)
+2014/03/19 13:35:51 [error] [php] include(error.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(26): spl_autoload_call()
+#1 /var/www/panda/protected/controllers/ApiController.php(134): ApiController->error()
+#2 /var/www/panda/protected/controllers/ApiController.php(161): ApiController->addTransaction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (26)
+in /var/www/panda/protected/controllers/ApiController.php (134)
+in /var/www/panda/protected/controllers/ApiController.php (161)
+2014/03/19 13:37:26 [error] [php] include(error.php): failed to open stream: No such file or directory (/var/www/panda/yii-1.1.14.f0fee9/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/panda/protected/controllers/ApiController.php(26): spl_autoload_call()
+#1 /var/www/panda/protected/controllers/ApiController.php(134): ApiController->error()
+#2 /var/www/panda/protected/controllers/ApiController.php(161): ApiController->addTransaction()
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): ApiController->actionTransaction()
+#4 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(286): ApiController->runAction()
+#6 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(265): ApiController->runActionWithFilters()
+#7 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): ApiController->run()
+#8 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/panda/index.php(13): CWebApplication->run()
+REQUEST_URI=/api/transaction
+in /var/www/panda/protected/controllers/ApiController.php (26)
+in /var/www/panda/protected/controllers/ApiController.php (134)
+in /var/www/panda/protected/controllers/ApiController.php (161)
+2014/03/31 15:55:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/14 15:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/14 16:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('api/index.php')
+#3 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/panda/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/api/index.php
+---
+2014/04/14 20:09:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phpTest/zologize/axa.php".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('phpTest/zologiz...')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phpTest/zologize/axa.php
+---
+2014/04/14 20:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phpMyAdmin/scripts/setup.php".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('phpMyAdmin/scri...')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phpMyAdmin/scripts/setup.php
+---
+2014/04/14 20:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pma/scripts/setup.php".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('pma/scripts/set...')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pma/scripts/setup.php
+---
+2014/04/14 20:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "myadmin/scripts/setup.php".' in /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/panda/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('myadmin/scripts...')
+#1 /var/www/panda/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/panda/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myadmin/scripts/setup.php
+---
