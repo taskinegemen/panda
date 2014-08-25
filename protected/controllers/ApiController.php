@@ -13,9 +13,9 @@ class ApiController extends Controller
 
 		$response['result']=$response_avoition ? $response_avoition : $this->response;
 		if ($this->errors) $response['errors']=$this->errors;
+
 		
-		
-		$response_string=json_encode($response,JSON_PRETTY_PRINT,25);
+		$response_string=json_encode($response);
 
 		if (!$response_string) var_dump(json_last_error_msg());
 		
