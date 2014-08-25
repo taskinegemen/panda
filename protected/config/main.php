@@ -19,12 +19,26 @@ $db_config=array(
                         		'username' => 'oscar',
                         		'password' => 'bDczTjwzfYG9XPbE',
                         		'charset' => 'utf8',
+                		),
+			"ulgen"=>array(
+                        		'connectionString' => 'mysql:host=datamaster.private.services.lindneo.com;port=3306;dbname=panda',
+                        		'emulatePrepare' => true,
+                        		'username' => 'db_panda',
+                        		'password' => '8rrYzKMWW8aMDudQ',
+                        		'charset' => 'utf8',
                 		)
 );
 
 $host_config=array(
                         "lindneo"=>array(
-                                                'catalog_host'=>'http://catalog.okutus.com',
+                                                'catalog_host'=>'http://catalog.lindneo.com',
+                                                'kerbela_host'=>'http://kerbela.lindneo.com/',
+                                                'panda_host'=>'http://panda.lindneo.com',
+                                                'koala_host'=>'http://koala.lindneo.com',
+                                                'cloud_host'=>'http://cloud.lindneo.com'
+                                        ),
+                         "ulgen"=>array(
+                                                'catalog_host'=>'http://catalog.lindneo.com',
                                                 'kerbela_host'=>'http://kerbela.lindneo.com/',
                                                 'panda_host'=>'http://panda.lindneo.com',
                                                 'koala_host'=>'http://koala.lindneo.com',
@@ -48,6 +62,7 @@ return array(
 
 	// autoloading model and component classes
 	'import'=>array(
+		'application.utilities.*',
 		'application.models.*',
 		'application.components.*',
 	),

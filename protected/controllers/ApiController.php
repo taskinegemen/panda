@@ -13,10 +13,12 @@ class ApiController extends Controller
 
 		$response['result']=$response_avoition ? $response_avoition : $this->response;
 		if ($this->errors) $response['errors']=$this->errors;
+		
+		
+		$response_string=json_encode($response,JSON_PRETTY_PRINT,25);
 
-		$response_string=json_encode($response);
-
-
+		if (!$response_string) var_dump(json_last_error_msg());
+		
 		header('Content-type: plain/text');
 		header("Content-length: " . strlen($response_string) ); // tells file size
 		echo $response_string;
@@ -25,7 +27,7 @@ class ApiController extends Controller
 	public function error($domain='Api',$explanation='Error', $arguments=null,$debug_vars=null ){
 		$error=new error($domain,$explanation, $arguments,$debug_vars);
 		$this->errors[]=$error; 
-		return $error;
+		return $error; 
 	}
 
 	public function actionService(){
@@ -58,7 +60,7 @@ class ApiController extends Controller
 			return 0;
 	} 
 
-	public function actionAuthenticate()
+	public function actionAuthenticate() 
 	{
 		$auth=Yii::app()->request->getPost('auth',0);
 		$http_service_ticket=Yii::app()->request->getPost('http_service_ticket',0);
@@ -72,6 +74,51 @@ class ApiController extends Controller
 		// error_log("user_id:".$kerberized->getUserId());
 		$kerberized->authenticate();
 	}
+
+	public function actionGetTransactionTicket()
+	{
+		$transction= new Transactions;
+		$transction->id=uniqid("", true);
+		$transction->result=1;
+		$transction->transaction_start_date=date('Y-n-d g:i:s',time());
+        $transction->ip=CHttpRequest::getUserHostAddress();
+		$transction->save();
+		echo $transction->id;
+	}
+
+	public function actionAddPlan()
+	{
+		$response=array();
+
+		if (!CHttpRequest::getIsPostRequest()) {
+        	echo "is Not POST request";
+			die();
+		}
+		$transaction=CHttpRequest::getPost('transaction',0);
+		$type=CHttpRequest::getPost('type_name',0);
+		$type_id=CHttpRequest::getPost('type_id',0);
+		$email=CHttpRequest::getPost('email',0);
+		$amount=CHttpRequest::getPost('amount',0);
+
+		$responseTransaction=$this->updateTransaction($transaction,$email,$type,$type_id);
+		if (!$responseTransaction) {
+			echo "error creating transaction";
+			die();
+		}
+
+		$bankProcess=$this->bankProcess();
+	        
+        if (!$bankProcess) {
+        	echo "error bank process";
+        	die();
+        }
+
+        $updateTransaction=$this->endTransaction($responseTransaction);
+
+        echo "0";
+
+	}
+
 
 	public function actionDocumentation()
 	{
@@ -120,7 +167,7 @@ class ApiController extends Controller
 		return $response;
 	}
 
-	public function addTransaction($user_id,$type,$type_id)
+	public function addTransaction($user_id,$type,$type_id,$paymentType=null)
 	{
 		$transction= new Transactions;
 		$transction->id=uniqid("", true);
@@ -129,11 +176,32 @@ class ApiController extends Controller
 		$transction->type_id=$type_id;
         $transction->ip=CHttpRequest::getUserHostAddress();
         $transction->transaction_start_date=date('Y-n-d g:i:s',time());
+
+
+        
+        if ($transction->save()) {
+        	return $transction;
+        }
+
+
+    	$this->error("AC-ATransaction","Operation failed",func_get_args());
+    	return 0;
+        
+	}
+
+	public function updateTransaction($transaction,$user_id,$type,$type_id)
+	{
+		$transction= Transactions::model()->findByPk($transaction);
+		$transction->user_id=$user_id;
+		$transction->type=$type;
+		$transction->type_id=$type_id;
+        $transction->ip=CHttpRequest::getUserHostAddress();
         $transction->result=1;
         
         if ($transction->save()) {
-        	return $transction->id;
+        	return $transction;
         }
+
     	$this->error("AC-ATransaction","Operation failed",func_get_args());
     	return 0;
         
@@ -141,65 +209,71 @@ class ApiController extends Controller
 
 	public function actionTransaction()
 	{
-		$email=$this->authenticate();
-		if (!$email) {
+
+		$response=new stdClass();
+		$response=false;
+		if (!$email=$this->authenticate()) {
+			$this->error("AC-ATransaction","Not authenticated",func_get_args(),CHttpRequest::getIsPostRequest());
+			$this->response($response);
 			return null;
 		}
-		$response=array();
+
 
 		if (!CHttpRequest::getIsPostRequest()) {
         	$this->error("AC-ATransaction","Wrong Request",func_get_args(),CHttpRequest::getIsPostRequest());
         	$this->response($response);
 			return null;
 		}
-		
-
-
-		// $type=openssl_decrypt(CHttpRequest::getPost('type_name',0), $this->method, $this->pass,true,$this->iv);
-		// $type_id=openssl_decrypt(CHttpRequest::getPost('type_id',0), $this->method, $this->pass,true,$this->iv);
 
 		$type=CHttpRequest::getPost('type_name',0);
 		$type_id=CHttpRequest::getPost('type_id',0);
-		error_log("TYPE is ".$type);
-		if ($type=='book') {
-			$responseCatalog=$this->getCatalog($type_id);
-
-		}
-		error_log("RESPONSE from catalog:".$responseCatalog);
-
+		
 		$responseTransaction=$this->addTransaction($email,$type,$type_id);
+
+
 		if (!$responseTransaction) {
+			$this->error("AC-ATransaction","TransactionNotAdded",func_get_args(),CHttpRequest::getIsPostRequest());
 			$this->response($response);
 			return null;
 		}
-		
-		$catalog=json_decode($responseCatalog,true);
-		if ($catalog["result"]['contentIsForSale']=='Yes') {
-	        //banka işlemleri
-	        $bankProcess=$this->bankProcess();
-	        
-	        if (!$bankProcess) {
-	        	$this->response($response);
-				return null;
-	        }
-		}
-        
-        
-       $updateTransaction=$this->endTransaction($responseTransaction);
 
-       	$book='';
-    	if ($type=='book') {
+        $paymentType=json_decode(CHttpRequest::getPost('paymentType',null));
+
+        if (!$paymentType){
+        	$this->error("AC-ATransaction","paymentType Not Found",func_get_args(),$paymentType);
+        	$this->response($response);
+        	return null;
+        }
+        $paymentResultObject = $responseTransaction->createModelFromPayment($paymentType,$this);
+        if(! $paymentResultObject ){
+        	$this->error("AC-ATransaction","paymentType Problematic",func_get_args(),$paymentType);
+        	$this->response($response);
+        	return null;
+        }
+
+ 
+        if ($responseTransaction->validate_this_payment)
+        	$responseTransaction->result=1;
+
+        if ($responseTransaction->validate_this_payment && $responseTransaction->this_payment_validated)
+        	$responseTransaction->result=0;
+
+        
+        
+       	$updateTransaction=$this->endTransaction($responseTransaction->id);
+       	
+    	if ($responseTransaction->result==0) {
         	$book=$this->callAddUserBook($email,$type_id);
     	}
 
-    	if ($book & $responseTransaction) {
-    		$res=true;
-    	}else
-    	{
-    		$res=false;
-    	}
-        
-    	$this->response($res);
+    	$response = new stdClass();
+
+    	$response->result=$responseTransaction->result;
+    	$response->paymentResultObject=$paymentResultObject;
+    	
+    	$this->response($response);
+
+    	return $response;
 	}
 
 	public function bankProcess()

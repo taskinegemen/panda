@@ -4,7 +4,7 @@
  * This is the model class for table "transactions".
  *
  * The followings are the available columns in table 'transactions':
- * @property string $id
+ * @property string $this->type_id
  * @property integer $user_id
  * @property string $type
  * @property string $type_id
@@ -15,6 +15,10 @@
  */
 class Transactions extends CActiveRecord
 {
+	public $validate_this_payment;
+	public $this_payment_validated;
+	private $catalogInfoCache;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -31,7 +35,7 @@ class Transactions extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, user_id, type_id, ip', 'required'),
+			array('id, ip', 'required'),
 			//array('user_id, result', 'numerical', 'integerOnly'=>true),
 			array('id, type_id', 'length', 'max'=>44),
 			array('type', 'length', 'max'=>5),
@@ -68,7 +72,169 @@ class Transactions extends CActiveRecord
 			'transaction_start_date' => 'Transaction Start Date',
 			'transaction_end_date' => 'Transaction End Date',
 			'ip' => 'Ip',
+			`transaction_type` => "Transaction",
+			`transaction_value` => "Transaction",
+			`transaction_CCNO` => "Transaction",
+			`transaction_CCYEAR` => "Transaction",
+			`transaction_CCMONTH` => "Transaction",
+			`transaction_CCV` => "Transaction",
+			`transaction_PROMOCODE` => "Transaction",
+			`transaction_PROMOCODEID` => "Transaction"
 		);
+	}
+
+	public function catalogInfo(&$responseHandler=null){
+		if ($this->catalogInfoCache) return $this->catalogInfoCache;
+		$catalogUrl=Yii::app()->params['catalog_host']."/api/getCatalog?bookId=".$this->type_id;
+		error_log("CATALOG URL:".$catalogUrl);
+		$cht = curl_init($catalogUrl);
+		curl_setopt($cht, CURLOPT_HEADER, 0);
+		curl_setopt($cht, CURLOPT_RETURNTRANSFER, 1);
+		$catalog = curl_exec($cht);
+		error_log("CATALOG RESPONSE:".$catalog);
+		
+		
+
+
+		//var_dump($catalogUrl);
+
+		if (!$catalog) {
+			if($responseHandler) $responseHandler->error("ModelTransaction","No Catalog Response",func_get_args(),$catalog);
+			return false;
+		}
+
+		$catalog=json_decode($catalog);
+
+		if (!$catalog->result) {
+			if($responseHandler) $responseHandler->error("ModelTransaction","No Catalog Info",func_get_args(),$catalog);
+			return false;
+		}
+		$this->catalogInfoCache=$catalog;
+		return $this->catalogInfoCache;
+
+	}
+
+
+	public function createModelFromPayment($paymentObject,&$responseHandler){
+		if(! in_array($paymentObject->type, array('InAppIOS','InAppAndroid','Web','PromoCode')) ){
+			if($responseHandler) $responseHandler->error("ModelTransaction","UnknowPaymentType",$paymentObject->type);
+			return false;
+		}
+		$this->transaction_type = $paymentObject->type;
+
+		$this->validate_this_payment=true;
+		$this->this_payment_validated=false;
+
+		$catalog=$this->catalogInfo();
+
+
+		switch ($paymentObject->type) {
+			case 'InAppIOS':
+				$this->validate_this_payment=false;
+				
+				break;
+			case 'InAppAndroid':
+				$this->validate_this_payment=false;
+				
+				break;
+			case 'Web':
+				
+				switch ($catalog->result->contentIsForSale) {
+					case 'Yes':
+						
+
+
+						// Some Payment GW Processor Here Would be better than just boolean;
+				        $bankProcess=false;
+				        
+				        if (!$bankProcess) {
+				        	if($responseHandler) $responseHandler->error("ModelTransaction","bankProcessNotSuccessfull",$paymentObject->type);
+				        	$this->this_payment_validated=false;
+							return false;
+				        }
+
+				        $this->this_payment_validated=true;
+				        return true;
+
+						break;
+					case 'Free':
+
+						$this->this_payment_validated=true;
+				        return true;
+
+						break;
+
+
+					case 'Promo':
+						if($responseHandler) $responseHandler->error("ModelTransaction","This Item Is Available Onyl With a Valid Promotion Code, PromoCode Type is expected!",$paymentObject);
+						return false;
+						
+						break;
+				}
+
+
+				
+					
+					
+				
+
+
+
+
+				break;
+			case 'PromoCode':
+			//var_dump($catalog);die;
+				$CampaignCode = PromotionCampaignCodes::model()
+					->with('campaign')
+					->findByPk($paymentObject->PROMOCODE,
+						"
+						(
+							( campaignType=:campaignTypeOrg AND 
+								campaignOrganisationId=:campaignOrganisationId ) 
+						 	OR 
+							( campaignType=:campaignTypeBook AND 
+								campaignBookId=:campaignBookId )
+
+						) AND 
+						(campaignEnabled=1) AND 
+						(
+							(campaignOneTimeTickets=1 AND promotionUsed=0 ) OR 
+							(campaignOneTimeTickets=0)
+						)
+
+
+						", 
+						array(
+							":campaignTypeOrg"=>"Organisation" ,
+							":campaignOrganisationId"=>$catalog->result->organisationId ,
+							":campaignTypeBook"=>"Book" ,
+							":campaignBookId"=>$this->type_id ,
+							)
+
+						 );
+
+				
+					
+				if (!$CampaignCode) {
+					if($responseHandler) $responseHandler->error("ModelTransaction","CampaignCode Not Found for PaymentType",$paymentObject->PROMOCODE);
+					return false;
+
+				}
+				$this->transaction_PROMOCODE=$CampaignCode->promotionCode;
+				$this->transaction_PROMOCODE=$CampaignCode->campaignId;
+				
+				$CampaignCode->save();
+
+
+
+
+				$this->this_payment_validated=true;
+				return true;
+
+
+				break;
+			
+		}
 	}
 
 	/**
